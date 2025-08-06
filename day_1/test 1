@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CAR SALES COMPANY</title>
+    <link rel="stylesheet" href=".css">
+</head>
+
+<body>
+    <h1>Welcome to Our Car Sales Company!</h1>
+    <div style="background-color: aqua;">
+        <div class="car-list">
+        
+            <div class="car">
+                <img src="carx.jpg" alt="carx" width="400">
+                <h2> SURF [ HILUX ] ( 2023 )</h2>
+                <p>Price: ${ 10000 }</p>
+                <button>View Details</button>
+            </div>
+        
+        </div>
+    </div>
+</body>
+
+
+<footer>
+    <p>&copy; 2024 Car Sales Company</p>
+</footer>
