@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  width: 100%;
+}
+
+body {
+  background-color: white;
+  color: #4e2b1c;
+  padding: 20px;
+  line-height: 1.6;
+}
+h3 {
+  background-color: pink;
+  text-emphasis-color: pink;
+  color: #4e2b1c;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 700px;
+  background: pink;
+  margin: auto;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.recipe-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #642b0c;
+}
+
+ul,
+ol {
+  margin-left: 20px;
+}
+
+ul li,
+ol li {
+  margin-bottom: 10px;
+}
+
+.ingredient li::marker,
+.instructions li::marker {
+  color: #f08a24;
+}
+
+strong {
+  color: #442009;
+}
+
+.prep-time {
+  background-color: pink;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.nutrition {
+  margin-top: 30px;
+}
+
+table {
+  width: 50%;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  color: #4a1d05;
+}
