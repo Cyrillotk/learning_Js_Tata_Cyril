@@ -11,13 +11,6 @@ body {
   padding: 20px;
   line-height: 1.6;
 }
-h3 {
-  background-color: pink;
-  text-emphasis-color: pink;
-  color: #4e2b1c;
-  padding: 20px;
-  line-height: 1.6;
-}
 
 .container {
   max-width: 700px;
