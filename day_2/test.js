@@ -1,10 +1,8 @@
-(function () {
-    "use strict";
-    // Start of your code 
-    function greetMe(yourName) {
-      alert(Hello ${yourName});
-    }
-  
-    greetMe("World");
-    /* End of your code 
-  })();
+const obj = {}
+obj.x = 3;
+console.log(obj.x);
+console.log(obj);
+const key = "y";
+obj[key] = 5;
+console.log(obj[key]);
+console.log(obj);
