@@ -1,9 +1,9 @@
 let randomNumber = Math.floor(Math.random() * 100) + 1;
 let guesses = document.querySelector('#guesses');
 let remaining = document.querySelector('#remaining');
-let lowOrHi = document.querySelector('#lowOrHigh');
+let lowOrHigh = document.querySelector('#lowOrHigh');
 let result = document.querySelector('#result');
-let guessField = document.querySelector('#guessNum');
+let guessNum = document.querySelector('#guessNum');
 let submitGuess = document.querySelector('#submitGuess');
 
 let prevGuesses = [];
@@ -30,18 +30,18 @@ function checkGuess() {
     prevGuesses.push(userGuess);  // Store the guess
 
     if (userGuess === randomNumber) {
-        displayMessage(Congratulations! You guessed it in ${ numGuesses } tries!);
+        displayMessage("Congratulations! You guessed it in ${ numGuesses } tries!");
         endGame();
     } else if (numGuesses === maxGuesses) {
-        displayMessage(You ran out of guesses.The number was ${ randomNumber }.);
+        displayMessage("You ran out of guesses.The number was ${ randomNumber }.");
         endGame();
     } else {
         if (userGuess < randomNumber) {
             lowOrHigh.textContent = 'Too low!';
         } else {
-            lowOrHi.textContent = 'Too high!';
+            lowOrHigh.textContent = 'Too high!';
         }
-        remaining.textContent = Remaining Guesses: ${ maxGuesses - numGuesses };
+        remaining.textContent = Remaining_Guesses(maxGuesses - numGuesses);
     }
 
     guessNum.value = ''; // Clear the input field
@@ -78,7 +78,7 @@ function resetGame() {
     guessNum.focus();
 
     guesses.textContent = 'Previous Guesses: ';
-    remaining.textContent = Remaining Guesses: ${ maxGuesses };
+    remaining.textContent = Remaining_Guesses ( maxGuesses );
     lowOrHigh.textContent = '';
     result.textContent = '';
 
