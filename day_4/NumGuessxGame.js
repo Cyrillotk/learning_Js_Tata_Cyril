@@ -78,7 +78,7 @@ function resetGame() {
     guessNum.focus();
 
     guesses.textContent = 'Previous Guesses: ';
-    remaining.textContent = Remaining_Guesses ( maxGuesses );
+    remaining.textContent = Remaining_Guesses($maxGuesses);
     lowOrHigh.textContent = '';
     result.textContent = '';
 
