@@ -8,7 +8,26 @@
   <link rel="stylesheet" href="recipe.css">
 </head>
 
-  <body>
+<body>
+  <nav class="site-nav" aria-label="Primary">
+    <div class="nav-inner">
+      <a class="brand" href="#">Simple Omelette</a>
+  
+      <ul class="nav-links" role="menubar">
+        <li role="none"><a role="menuitem" href="#" class="nav-btn">Home</a></li>
+        <li role="none"><a role="menuitem" href="#about" class="nav-btn">About</a></li>
+  
+        <li class="dropdown" role="none">
+          <button class="nav-btn dropdown-toggle" aria-haspopup="true" aria-expanded="false" id="menuBtn">
+            Menu ▾
+          </button>
+  
+      <button class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        ☰
+      </button>
+    </div>
+  </nav>
+  <div class="frame">
     <div class="image-omelette">
       <img src="image-omelette.jpeg" alt="image-omelette" width="400">
     </div>
@@ -74,7 +93,7 @@
         <td>22g</td>
       </tr>
     </table>
-    </div>
-  </body>
+  </div>
+</body>
 
 </html>

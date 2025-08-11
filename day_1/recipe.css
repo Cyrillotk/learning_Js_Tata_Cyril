@@ -7,11 +7,9 @@
 }
 
 body {
-  background-color: white;
-  color: #4e2b1c;
-  padding: 20px;
-  line-height: 1.6;
-}
+  background-color: rgb(215, 199, 166);
+  margin: 20px;
+  }
 
 .container {
   max-width: 700px;
@@ -91,4 +89,78 @@ td {
 
 th {
   color: #4a1d05;
+}
+.frame {
+background-color: rgb(234, 232, 228);
+margin: 20px;
+padding: 20px;
+border-radius: 10px;
+}
+
+.site-nav {
+  width: 100%;
+  background: #f6ebe3; 
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  font-family: Georgia, "Times New Roman", serif; 
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.6rem 1rem;
+}
+
+.brand {
+  font-size: 1.1rem;
+  color: #6b2f1f; 
+  text-decoration: none;
+  font-weight: 700;
+  margin-right: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.nav-btn {
+  background: #fff;
+  border: 0;
+  padding: 0.45rem 0.75rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #6b2f1f;
+  font-weight: 600;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.04);
+  cursor: pointer;
+  transition: transform .08s ease, box-shadow .12s ease;
+  display: inline-block;
+}
+
+
+
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 8px);
+  min-width: 180px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 0.4rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  border: 1px solid rgba(0,0,0,0.04);
+  list-style: none;
+  margin: 0;
+  display: none; 
+  z-index: 200;
 }
