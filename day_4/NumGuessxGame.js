@@ -3,7 +3,7 @@ let guesses = document.querySelector('#guesses');
 let remaining = document.querySelector('#remaining');
 let lowOrHigh = document.querySelector('#lowOrHigh');
 let result = document.querySelector('#result');
-let guessNum = document.querySelector('#guessNum');
+let guessField = document.querySelector('#guessField');
 let submitGuess = document.querySelector('#submitGuess');
 
 let prevGuesses = [];
@@ -12,22 +12,22 @@ let maxGuesses = 10;
 let gameEnded = false;
 
 function checkGuess() {
-    if (gameEnded) return; // Prevent further guesses after the game ends
+    if (gameEnded) return;
 
-    let userGuess = Number(guessNum.value);
+    let userGuess = Number(guessField.value);
 
     if (isNaN(userGuess) || userGuess < 1 || userGuess > 100) {
         alert('Please enter a valid number between 1 and 100.');
-        guessNum.value = ''; // Clear the invalid input
+        guessField.value = ''; 
         return;
     }
 
     if (numGuesses === 1) {
-        guesses.textContent += ' '; // Initialize the list with a space
+        guesses.textContent += ' '; 
     }
 
     guesses.textContent += userGuess + ' ';
-    prevGuesses.push(userGuess);  // Store the guess
+    prevGuesses.push(userGuess);  
 
     if (userGuess === randomNumber) {
         displayMessage("Congratulations! You guessed it in ${ numGuesses } tries!");
@@ -44,9 +44,9 @@ function checkGuess() {
         remaining.textContent = Remaining_Guesses(maxGuesses - numGuesses);
     }
 
-    guessNum.value = ''; // Clear the input field
+    guessField.value = ''; 
     numGuesses++;
-    guessNum.focus(); // Return focus to the input field
+    guessField.focus(); 
 }
 
 function displayMessage(message) {
@@ -55,10 +55,9 @@ function displayMessage(message) {
 
 function endGame() {
     gameEnded = true;
-    guessNum.disabled = true;
+    guessField.disabled = true;
     submitGuess.disabled = true;
 
-    // Add a reset button
     const resetButton = document.createElement('button');
     resetButton.textContent = 'Start new game';
     resetButton.id = 'resetButton';
@@ -72,10 +71,10 @@ function resetGame() {
     numGuesses = 1;
     gameEnded = false;
 
-    guessNum.disabled = false;
+    guessField.disabled = false;
     submitGuess.disabled = false;
-    guessNum.value = '';
-    guessNum.focus();
+    guessField.value = '';
+    guessField.focus();
 
     guesses.textContent = 'Previous Guesses: ';
     remaining.textContent = Remaining_Guesses($maxGuesses);
@@ -84,16 +83,16 @@ function resetGame() {
 
     const resetButton = document.querySelector('#resetButton');
     if (resetButton) {
-        resetButton.parentNode.removeChild(resetButton); // Remove the reset button
+        resetButton.parentNode.removeChild(resetButton); 
     }
 }
 
 submitGuess.addEventListener('click', checkGuess);
-guessNum.addEventListener('keypress', function (event) {
+guessField.addEventListener('keypress', function (event) {
     if (event.key === "Enter") {
         checkGuess();
         event.preventDefault();
     }
 });
 
-guessNum.focus();
+guessField.focus();
