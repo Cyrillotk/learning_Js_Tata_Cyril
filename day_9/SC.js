@@ -11,7 +11,7 @@ function displayCart() {
   let total = 0;
   cart.forEach(item => {
     let li = document.createElement("li");
-    li.textContent = item.name + " - $" + item.price;
+    li.textContent = item.name + "fcfa" + item.price;
     list.appendChild(li);
     total += item.price;
   });
