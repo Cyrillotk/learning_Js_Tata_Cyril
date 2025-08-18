@@ -10,17 +10,16 @@ body {
 }
 
 .container {
-    background-color: #0aa912;
+    
+    background-color:calc(black,rgb(53, 188, 53),rgb(15, 66, 49));
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
     width: 400px;
     text-align: center;
 }
 
-.shape-selector {
-    margin-bottom: 15px;
-}
+
 
 label {
     display: block;
