@@ -70,4 +70,13 @@ fruits[99]; // undefined
 const fruits = ["Apple", "Banana"];
 console.log(fruits.indexOf("Banana"));
 // 1
-  
+  //checks if element found in array
+  const fruits = ["Apple", "Banana"];
+
+fruits.includes("Banana"); // true
+fruits.includes("Cherry"); // false
+
+// If indexOf() doesn't return -1, the array contains the given item.
+fruits.indexOf("Banana") !== -1; // true
+fruits.indexOf("Cherry") !== -1; // false
+
