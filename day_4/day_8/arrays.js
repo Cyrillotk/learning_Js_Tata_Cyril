@@ -46,5 +46,28 @@ console.log(fruits2.length);
 const fruits3 = "Apple, Banana".split(", ");
 console.log(fruits3.length);
 // 2
+//create string with array
+const fruits = ["Apple", "Banana"];
+const fruitsString = fruits.join(", ");
+console.log(fruitsString);
+// "Apple, Banana"
+//access an array item by its index
+const fruits = ["Apple", "Banana"];
 
+// The index of an array's first element is always 0.
+fruits[0]; // Apple
+
+// The index of an array's second element is always 1.
+fruits[1]; // Banana
+
+// The index of an array's last element is always one
+// less than the length of the array.
+fruits[fruits.length - 1]; // Banana
+
+// Using an index number larger than the array's length
+// returns 'undefined'.
+fruits[99]; // undefined
+const fruits = ["Apple", "Banana"];
+console.log(fruits.indexOf("Banana"));
+// 1
   
