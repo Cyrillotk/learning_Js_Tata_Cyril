@@ -79,4 +79,38 @@ fruits.includes("Cherry"); // false
 // If indexOf() doesn't return -1, the array contains the given item.
 fruits.indexOf("Banana") !== -1; // true
 fruits.indexOf("Cherry") !== -1; // false
+//add to array
+const fruits = ["Apple", "Banana"];
+const newLength = fruits.push("Orange");
+console.log(fruits);
+// ["Apple", "Banana", "Orange"]
+console.log(newLength);
+// 3
+//remove
+const fruits = ["Apple", "Banana"];
+const removedItem = fruits.shift();
+console.log(fruits);
+// ["Banana"]
+console.log(removedItem);
+// Apple
+//removing multiple items .splice()
+const fruits = ["Apple", "Strawberry", "Cherry", "Banana", "Mango"];
+const start = 0;
+const deleteCount = 3;
+const removedItems = fruits.splice(start, deleteCount);
+console.log(fruits);
+// ["Banana", "Mango"]
+console.log(removedItems);
+// ["Apple", "Strawberry", "Cherry"]
+
+//removing a single item by index
+const fruits = ["Strawberry", "Banana", "Mango"];
+const start = fruits.indexOf("Banana");
+const deleteCount = 1;
+const removedItems = fruits.splice(start, deleteCount);
+console.log(fruits);
+// ["Strawberry", "Mango"]
+console.log(removedItems);
+// ["Banana"]
+
 
