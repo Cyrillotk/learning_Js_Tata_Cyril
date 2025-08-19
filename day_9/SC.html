@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Shopping cart</title>
   <link rel="stylesheet" href="SC.css">
 </head>
+
 <body>
-  <h1><strong>SHOPPING CART</strong></h1>
+  <div class="container">
+    <h1><strong>SHOPPING CART</strong></h1>
 
-  <div class="products">
-    <h2>PRODUCTS</h2>
-    <div class="item">
-      <p>Pen 100 fcfa</p>
-      <button onclick="addToCart('Pen',  100)">Add to Cart</button>
+    <div class="products">
+      <h2>PRODUCTS</h2>
+      <div class="item">
+        <p>Pen 100 fcfa</p>
+        <button onclick="addToCart('Pen',  100)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <p>Book 300 fcfa</p>
+        <button onclick="addToCart('Book',  300)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <p>Ruler 100 fcfa</p>
+        <button onclick="addToCart('Ruler',  100)">Add to Cart</button>
+      </div>
+      <div class="delete">
+        <button onclick="removeLastItem()">Remove Last Item</button>
+      </div>
     </div>
-    <div class="item">
-      <p>Book 300 fcfa</p>
-      <button onclick="addToCart('Book',  300)">Add to Cart</button>
+
+    <div class="cart">
+      <h2>YOUR CART</h2>
+      <ul id="cartList" class="cart-list"></ul>
+      <p><strong>Total: fcfa<span id="total">0</span></strong></p>
     </div>
-    <div class="item">
-      <p>Ruler 100 fcfa</p>
-      <button onclick="addToCart('Ruler',  100)">Add to Cart</button>
-    </div>
-    <button onclick="removeLastItem()">Remove Last Item</button>
   </div>
-
-  <div class="cart">
-    <h2>YOUR CART</h2>
-    <ul id="cartList" class="cart-list"></ul>
-    <p><strong>Total: fcfa<span id="total">0</span></strong></p>
-  </div>
-
   <script src="SC.js"></script>
 </body>
+
 </html>
