@@ -62,4 +62,10 @@ body {
     text-align: center;
     
   }
-  
+  #delete{
+    background:rgb(228, 76, 76) ;
+
+  }
+  #delete:hover {
+background: rgb(186, 49, 49);
+  }
