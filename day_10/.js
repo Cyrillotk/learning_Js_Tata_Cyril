@@ -25,4 +25,12 @@ quickAddBtn.addEventListener("click",function(){
     quickAddFormDiv.style.display = "block";
 });
 
-cancelBtn.add
+cancelBtn.addEventListener("click",function(){
+    quickAddFormDiv.style.display = "none";
+});
+
+AddBtn.addEventListener("click",addToBook);
+function addToBook(){
+    var isNull = fullName.value!='' && phone.value!='' && address.value!='' && city.value!='' && email.value!=''
+    console.log(isNull)
+}
